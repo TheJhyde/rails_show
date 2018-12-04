@@ -6,7 +6,7 @@ require "rails_show/version"
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
   s.name        = "rails_show"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.authors     = ["J Hyde"]
   s.email       = ["jkhyde86@gmail.com"]
   s.homepage    = "http://thejhyde.zone"

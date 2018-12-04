@@ -41,6 +41,8 @@ class <%= name.capitalize.pluralize %>Controller < ApplicationController
         @contents = "Permission denied"
       rescue Errno::EISDIR
         open_directory
+      rescue Errno::ENOENT
+        @contents = "No such file or directory"
       end
     end
 end

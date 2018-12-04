@@ -25,7 +25,6 @@ class <%= name.capitalize %>Controller < ApplicationController
       @items = Dir.entries("#{Dir.pwd}/#{@path}")
         .reject{|f| f == "." || f == ".."}
         .sort
-      end
     end
 
     # Extracts the contents of the file.

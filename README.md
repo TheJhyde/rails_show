@@ -10,7 +10,7 @@ Run 'rails g view_source' to create the relevant controller and view.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'rails_show'
+gem 'rails_show', git: 'https://github.com/TheJhyde/rails_show.git'
 ```
 
 And then execute:

@@ -1,0 +1,20 @@
+<div>
+  <%= @path.gsub("__", ".") %>
+</div>
+<br>
+<% if @items %>
+  <ul>
+    <% @items.each do |item|%>
+      <li>
+        <%= link_to item, source_path("#{@path}/#{item}".gsub(".", "__")) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<% if @contents %>
+  <div>
+    <%# Pre used here to retain indentation and spacing for files. It's important that it all be on one line, as otherwise the indentation used here would appear on the page %>
+    <pre><%= @contents %></pre>
+  </div>
+<% end %>

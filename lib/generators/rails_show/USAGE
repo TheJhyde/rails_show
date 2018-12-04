@@ -1,8 +1,13 @@
+Usage:
+    rails generate rails_show NAME
+
 Description:
-    Explain the generator
+    Generates a controller, view, and test for displaying this app's code. Put a name after rails_show to name the controller and route. If no name is provided, it'll use "sources"
 
 Example:
-    rails generate rails_show Thing
+    rails generate rails_show code
 
     This will create:
-        what/will/it/create
+        Controller: app/controllers/codes_controller.rb
+        Test: test/controllers/codes_controller_test.rb
+        Views: app/views/codes/show.html.erb

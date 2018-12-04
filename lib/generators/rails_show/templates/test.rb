@@ -1,13 +1,13 @@
 require 'test_helper'
 
-class <%= name.capitalize %>ControllerTest < ActionDispatch::IntegrationTest
+class <%= name.capitalize.pluralize %>ControllerTest < ActionDispatch::IntegrationTest
   test "index" do
-    get <%= name %>_index_path
+    get <%= name.pluralize %>_path
     assert_response :success
   end
 
   test "show" do
-    get <%= name %>_path("app")
+    get <%= name.singularize %>_path("app")
     assert_response :success
   end
 end

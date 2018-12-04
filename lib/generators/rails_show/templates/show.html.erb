@@ -6,7 +6,7 @@
   <ul>
     <%% @items.each do |item|%>
       <li>
-        <%%= link_to item, <%= name %>_path("#{@path}/#{item}".gsub(".", "__")) %>
+        <%%= link_to item, <%= name.singularize %>_path("#{@path}/#{item}".gsub(".", "__")) %>
       </li>
     <%% end %>
   </ul>

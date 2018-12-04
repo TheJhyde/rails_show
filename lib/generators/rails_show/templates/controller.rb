@@ -1,4 +1,4 @@
-class <%= name.capitalize %>Controller < ApplicationController
+class <%= name.capitalize.pluralize %>Controller < ApplicationController
 
   # Index takes us the top of the file tree
   def index
